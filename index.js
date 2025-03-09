@@ -295,7 +295,8 @@ const proyectos = [
         descripcion: 'Generador de link de correos para compartir en redes sociales.',
         enlace: 'https://generador-link-correos.vercel.app/',
         category: 'Desarrollo Web'
-    }
+    },
+    
 ]
 
 // Obtener el contenedor de proyectos
@@ -380,6 +381,20 @@ const portafolios = [
         category: 'Html Css Js',
         enlace: 'Plantillas_html/03-Html/index.html',
         img: 'img/3.png',
+    },
+    {
+        titulo: 'Perfil',
+        descripcion: 'Este Sito Web es un perfil de usuario',
+        category: 'Html Css Js',
+        enlace: 'Plantillas_html/04-Html/index.html',
+        img: 'img/4.png',
+    },
+    {
+        titulo: 'Catalogo Bisuteria',
+        descripcion: 'Este Sito Web es un catalogo de productos',
+        category: 'Html Css Js',
+        enlace: 'Plantillas_html/05-Html/index.html',
+        img: 'img/4.png',
     },
   
 ]

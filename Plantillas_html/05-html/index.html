@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance - Bisutería Fina</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Elegance</h1>
+                <p>Bisutería Fina</p>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Elegancia en cada detalle</h2>
+                <p>Descubre nuestra exclusiva colección de bisutería fina</p>
+                <a href="#categorias" class="btn">Ver Colección</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="anillos">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anillos">
+                    </div>
+                    <h3>Anillos</h3>
+                    <a href="#" class="btn-small">Ver Colección</a>
+                </div>
+                <div class="category-card" data-category="zarcillos">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Zarcillos">
+                    </div>
+                    <h3>Zarcillos</h3>
+                    <a href="#" class="btn-small">Ver Colección</a>
+                </div>
+                <div class="category-card" data-category="pulseras">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pulseras">
+                    </div>
+                    <h3>Pulseras</h3>
+                    <a href="#" class="btn-small">Ver Colección</a>
+                </div>
+                <div class="category-card" data-category="cadenas">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cadenas">
+                    </div>
+                    <h3>Cadenas</h3>
+                    <a href="#" class="btn-small">Ver Colección</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destacados" class="featured">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="anillos">Anillos</button>
+                <button class="filter-btn" data-filter="zarcillos">Zarcillos</button>
+                <button class="filter-btn" data-filter="pulseras">Pulseras</button>
+                <button class="filter-btn" data-filter="cadenas">Cadenas</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="anillos">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anillo Elegance">
+                        <div class="product-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <h3>Anillo Elegance</h3>
+                    <p class="price">$45.99</p>
+                </div>
+                <div class="product-card" data-category="zarcillos">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Zarcillos Crystal">
+                        <div class="product-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <h3>Zarcillos Crystal</h3>
+                    <p class="price">$38.50</p>
+                </div>
+                <div class="product-card" data-category="pulseras">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pulsera Delicada">
+                        <div class="product-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <h3>Pulsera Delicada</h3>
+                    <p class="price">$29.99</p>
+                </div>
+                <div class="product-card" data-category="cadenas">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cadena Sofisticada">
+                        <div class="product-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <h3>Cadena Sofisticada</h3>
+                    <p class="price">$52.75</p>
+                </div>
+                <div class="product-card" data-category="anillos">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1589674781759-c21c37956a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anillo Vintage">
+                        <div class="product-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <h3>Anillo Vintage</h3>
+                    <p class="price">$41.25</p>
+                </div>
+                <div class="product-card" data-category="pulseras">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pulsera Charm">
+                        <div class="product-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <h3>Pulsera Charm</h3>
+                    <p class="price">$33.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>En Elegance, nos dedicamos a crear piezas de bisutería fina que combinan elegancia, calidad y estilo. Cada pieza es cuidadosamente seleccionada para garantizar que nuestros clientes reciban productos excepcionales.</p>
+                    <p>Nuestra misión es ofrecer accesorios que realcen la belleza natural de quien los lleva, aportando un toque de sofisticación a cualquier ocasión.</p>
+                    <a href="#contacto" class="btn">Contáctanos</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nuestro Taller">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>"Las piezas de Elegance son simplemente hermosas. La calidad es excepcional y siempre recibo cumplidos cuando las uso."</p>
+                        <div class="client-info">
+                            <h4>María González</h4>
+                            <span>Cliente Frecuente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Compré unos zarcillos como regalo para mi hermana y quedó encantada. El servicio al cliente fue excelente y el empaque muy elegante."</p>
+                        <div class="client-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <span>Cliente Satisfecho</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"La atención personalizada y la calidad de las piezas hacen que Elegance sea mi tienda favorita para comprar bisutería."</p>
+                        <div class="client-info">
+                            <h4>Laura Martínez</h4>
+                            <span>Cliente Leal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn">&#10094;</button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-btn">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Visítanos</h3>
+                        <p>Av. Principal #123, Ciudad</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Horario</h3>
+                        <p>Lunes a Viernes: 9am - 7pm</p>
+                        <p>Sábados: 10am - 4pm</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Contacto</h3>
+                        <p>Email: info@elegance.com</p>
+                        <p>Teléfono: (123) 456-7890</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="product-details">
+                <div class="product-gallery">
+                    <img id="modalProductImg" src="/placeholder.svg" alt="Producto">
+                </div>
+                <div class="product-info">
+                    <h2 id="modalProductTitle"></h2>
+                    <p class="price" id="modalProductPrice"></p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.</p>
+                    <div class="quantity">
+                        <label for="quantity">Cantidad:</label>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="btn add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Elegance</h2>
+                    <p>Bisutería Fina</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#categorias">Categorías</a></li>
+                            <li><a href="#destacados">Destacados</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Categorías</h3>
+                        <ul>
+                            <li><a href="#">Anillos</a></li>
+                            <li><a href="#">Zarcillos</a></li>
+                            <li><a href="#">Pulseras</a></li>
+                            <li><a href="#">Cadenas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li><a href="#">Política de Devoluciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elegance Bisutería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
