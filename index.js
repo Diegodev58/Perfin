@@ -349,3 +349,100 @@ for (const proyecto of proyectos) {
     proyectosContainer.appendChild(projectCard);
     projectCard.appendChild(projectInfo);
 }
+
+
+// Agregar la sección de portafolio
+
+
+
+
+
+
+// Agragar Portafolio
+const portafolios = [
+    {
+        titulo: 'Infrormacion Personal',
+        descripcion: 'Este Sito Web 01 en uno de mas Usado en mis proyectos como Blog Personal',
+        category: 'Html Css Js',
+        enlace: 'Plantillas_html/01-Html/index.html',
+        img: 'img/2.png',
+    },
+    {
+        titulo: 'Bog Personal',
+        descripcion: 'Este Sito Web 01 en uno de mas Usado en mis proyectos como Blog Personal',
+        category: 'Html Css Js',
+        enlace: 'Plantillas_html/02-Html/index.html',
+        img: 'img/1.png',
+    },
+    {
+        titulo: 'Catalogo de Productos',
+        descripcion: 'Este Sito Web es un catalogo de productos',
+        category: 'Html Css Js',
+        enlace: 'Plantillas_html/03-Html/index.html',
+        img: 'img/3.png',
+    },
+  
+]
+
+// Obtener el contenedor de portafolio
+// Acceder al primer elemento
+function agregarPortafolio() {
+    const portafolioP = document.getElementsByClassName('portfolio-grid')[0];
+    
+    
+    for (let portafolio of portafolios) {
+        // Crear un nuevo div para cada portafolio
+        const container = document.createElement('div');
+        container.classList.add('container');
+        const portafolioCard = document.createElement('div');
+        portafolioCard.classList.add('portfolio-item');
+        portafolioCard.addEventListener('click', () => {
+            window.open(portafolio.enlace, '_blank');
+        })
+        const portafolioInfo = document.createElement('div');
+        portafolioInfo.classList.add('portfolio-overlay');
+    
+        // Crear el título del portafolio
+        const h3 = document.createElement('h3');
+        h3.classList.add('portfolio-title');
+        h3.textContent = portafolio.titulo;
+    
+        // Crear la categoría del portafolio
+        const span = document.createElement('span');
+        span.classList.add('portfolio-category');
+        span.textContent = portafolio.category;
+    
+        // Crear la descripción del portafolio
+        const p = document.createElement('p');
+        p.classList.add('portfolio-description');
+        p.textContent = portafolio.descripcion;
+    
+        const img = document.createElement('img');
+        img.classList.add('portfolio-img');
+        img.src = portafolio.img;
+        img.alt = 'Portafolio';
+    
+        // Crear el enlace del portafolio
+        const a = document.createElement('a');
+        a.classList.add('portafolio-view');
+        a.textContent = 'Ver detalles';
+        a.href = portafolio.enlace;
+    
+        // Agregar los elementos al div de la experiencia
+        portafolioInfo.appendChild(img);
+        portafolioInfo.appendChild(h3);
+        portafolioInfo.appendChild(span);
+        //portafolioInfo.appendChild(p);
+        portafolioInfo.appendChild(a);
+        
+        // Agregar el div de la experiencia al contenedor
+        portafolioCard.appendChild(portafolioInfo);
+        
+        portafolioP.appendChild(portafolioCard);
+    }
+    
+    
+    //
+}
+// Iterar sobre el array de portafolio    
+agregarPortafolio();

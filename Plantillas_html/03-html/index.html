@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Elegante</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar productos...">
+                <button id="search-btn">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="filters">
+            <h2>Categorías</h2>
+            <ul id="categories">
+                <li data-category="all" class="active">Todos</li>
+                <li data-category="electronics">Electrónica</li>
+                <li data-category="clothing">Ropa</li>
+                <li data-category="home">Hogar</li>
+                <li data-category="beauty">Belleza</li>
+            </ul>
+        </aside>
+
+        <section class="products" id="products-container">
+            <!-- Los productos se cargarán dinámicamente con JavaScript -->
+        </section>
+    </main>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-product-details">
+                <!-- Detalles del producto seleccionado -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Catálogo Elegante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
