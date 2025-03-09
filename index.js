@@ -393,7 +393,7 @@ const portafolios = [
         titulo: 'Catalogo Bisuteria',
         descripcion: 'Este Sito Web es un catalogo de productos',
         category: 'Html Css Js',
-        enlace: 'Plantillas_html/03-html/index.html',
+        enlace: 'Plantillas_html/05-html/index.html',
         img: 'img/5.png',
     },
   
