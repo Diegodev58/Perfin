@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css"> <!-- Enlace al archivo CSS -->
+    <title>Mi Perfil</title> <!-- Título de la página -->
 </head>
 <body>
+    <!-- Encabezado de la página -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">Mi Perfil</a>
+            <a href="#" class="logo">Mi Perfil</a> <!-- Logo o nombre del perfil -->
+            <!-- Botón de menú móvil -->
             <button class="mobile-toggle" id="mobile-toggle">☰</button>
+            <!-- Menú de navegación -->
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">Sobre Mí</a></li>
@@ -18,57 +22,66 @@
                 <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
                 <li class="nav-item"><a href="#portfolio" class="nav-link">Portafolio</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
-                <li class="nav-item" onclick="dackMode()">
-                    <button class="theme-toggle" id="theme-toggle" onclick="dackMode()">🌙</button>
+                <!-- Botón para cambiar el tema (modo oscuro/claro) -->
+                <li class="nav-item" onclick="darkMode()">
+                    <button class="theme-toggle" id="theme-toggle" onclick="darkMode()">🌙</button>
                 </li>
             </ul>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Sección Hero (Inicio) -->
     <section class="hero" id="home">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Tu Nombre</h1>
-                <h2 class="hero-subtitle">Tu Profesión</h2>
+                <h1 class="hero-title">Diego Andres </h1> <!-- Nombre del usuario -->
+                <h2 class="hero-subtitle">Desarrollador</h2> <!-- Profesión o título -->
                 <p class="hero-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet. 
-                    Phasellus faucibus mauris ac nunc convallis, at finibus elit tincidunt.
-                </p>
+                    Bienvenido a mi sitio web. 
+                    Aquí encontrarás información 
+                    sobre mí y mis proyectos. 
+                    Soy desarrollador web con experiencia en la creación de sitios web.
+                     Próximamente, 
+                     estaré expandiendo mis servicios al desarrollo de aplicaciones 
+                     móviles y otros proyectos innovadores..
+                </p> <!-- Descripción breve -->
+                <!-- Botones de acción -->
                 <div class="hero-buttons">
                     <a href="#contact" class="btn">Contáctame</a>
                     <a href="#projects" class="btn btn-outline">Mis Proyectos</a>
                 </div>
+                <!-- Enlaces a redes sociales -->
                 <div class="social-links">
-                    <a href="#" class="social-icon">in</a>
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">tw</a>
-                    <a href="#" class="social-icon">ig</a>
+                    <a href="#" class="social-icon">in</a> <!-- LinkedIn -->
+                    <a href="#" class="social-icon">f</a> <!-- Facebook -->
+                    <a href="#" class="social-icon">tw</a> <!-- Twitter -->
+                    <a href="#" class="social-icon">ig</a> <!-- Instagram -->
                 </div>
             </div>
+            <!-- Imagen de perfil -->
             <div class="hero-image">
-                <img src="https://via.placeholder.com/300" alt="Foto de perfil" class="profile-img">
+                <img src="#" alt="Foto de perfil" class="profile-img">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Sección Sobre Mí -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 class="section-title">Sobre Mí</h2> <!-- Título de la sección -->
             <div class="about-content">
                 <div class="about-text">
+                    <!-- Descripción personal -->
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet. 
-                        Phasellus faucibus mauris ac nunc convallis, at finibus elit tincidunt. Donec auctor, nunc eget 
-                        ultricies ultricies, nunc nisl ultricies nunc, quis ultricies nisl nisl quis nisl.
+                        Actualmente Estoy trabajando como desarrollador web y estoy Dispuesto a Crear tu Sitio Web.
                     </p>
                     <p>
-                        Phasellus faucibus mauris ac nunc convallis, at finibus elit tincidunt. Donec auctor, nunc eget 
-                        ultricies ultricies, nunc nisl ultricies nunc, quis ultricies nisl nisl quis nisl.
+                        Aqui podrás encontrar información sobre mi experiencia y habilidades como desarrollador web.
                     </p>
+                    <!-- Botón para descargar CV -->
                     <a href="#" class="btn" style="margin-top: 20px;">Descargar CV</a>
                 </div>
+                <!-- Estadísticas de habilidades -->
                 <div class="about-stats">
                     <div class="stat-item">
                         <div class="stat-title">
@@ -79,194 +92,81 @@
                             <div class="progress" style="width: 95%;"></div>
                         </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-title">
-                            <span>JavaScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-title">
-                            <span>React</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-title">
-                            <span>Node.js</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
+                    <!-- Repetir para otras habilidades -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Sección de Experiencia -->
     <section class="section" id="experience">
         <div class="container">
-            <h2 class="section-title">Mi Experiencia</h2>
+            <h2 class="section-title">Mi Experiencia</h2> <!-- Título de la sección -->
             <div class="timeline">
+                <!-- Elementos de la línea de tiempo -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <span class="timeline-date">2020 - Presente</span>
-                        <h3 class="timeline-title">Desarrollador Senior</h3>
-                        <p>Empresa XYZ</p>
+                        <span class="timeline-date">2020 - Presente</span> <!-- Fecha -->
+                        <h3 class="timeline-title">Desarrollador Senior</h3> <!-- Título del puesto -->
+                        <p>Empresa XYZ</p> <!-- Nombre de la empresa -->
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet.
-                        </p>
+                        </p> <!-- Descripción del puesto -->
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2018 - 2020</span>
-                        <h3 class="timeline-title">Desarrollador Web</h3>
-                        <p>Empresa ABC</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2016 - 2018</span>
-                        <h3 class="timeline-title">Diseñador UI/UX</h3>
-                        <p>Estudio Creativo</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2014 - 2016</span>
-                        <h3 class="timeline-title">Pasante</h3>
-                        <p>Agencia Digital</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet.
-                        </p>
-                    </div>
-                </div>
+                
+                <!-- Repetir para otras experiencias -->
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Sección de Proyectos -->
     <section class="section projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Proyectos Realizados</h2>
+            <h2 class="section-title">Proyectos Realizados</h2> <!-- Título de la sección -->
+            <!-- Filtros de proyectos -->
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="web">Desarrollo Web</button>
                 <button class="filter-btn" data-filter="app">Aplicaciones</button>
                 <button class="filter-btn" data-filter="design">Diseño</button>
             </div>
+            <!-- Grid de proyectos -->
             <div class="projects-grid">
-                <div class="project-card" data-category="web" data-id="1">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 1" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">Sitio Web Corporativo</h3>
-                        <span class="project-category">Desarrollo Web</span>
-                        <p class="project-description">
-                            Diseño y desarrollo de un sitio web corporativo responsive con panel de administración personalizado.
-                        </p>
-                        <a href="#" class="project-view">Ver detalles</a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="app" data-id="2">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 2" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">Aplicación de Gestión</h3>
-                        <span class="project-category">Aplicaciones</span>
-                        <p class="project-description">
-                            Desarrollo de una aplicación web para gestión de inventario y ventas con reportes en tiempo real.
-                        </p>
-                        <a href="#" class="project-view">Ver detalles</a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="design" data-id="3">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 3" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">Rediseño de Marca</h3>
-                        <span class="project-category">Diseño</span>
-                        <p class="project-description">
-                            Rediseño completo de identidad corporativa incluyendo logo, papelería y guía de estilo.
-                        </p>
-                        <a href="#" class="project-view">Ver detalles</a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="web" data-id="4">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 4" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">E-commerce</h3>
-                        <span class="project-category">Desarrollo Web</span>
-                        <p class="project-description">
-                            Tienda online completa con pasarela de pagos, gestión de productos y sistema de pedidos.
-                        </p>
-                        <a href="#" class="project-view">Ver detalles</a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="app" data-id="5">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 5" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">App Móvil</h3>
-                        <span class="project-category">Aplicaciones</span>
-                        <p class="project-description">
-                            Aplicación móvil para Android e iOS con sincronización en la nube y notificaciones push.
-                        </p>
-                        <a href="#" class="project-view">Ver detalles</a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="design" data-id="6">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 6" class="project-img">
-                    <div class="project-info">
-                        <h3 class="project-title">Campaña Publicitaria</h3>
-                        <span class="project-category">Diseño</span>
-                        <p class="project-description">
-                            Diseño de campaña publicitaria para redes sociales, web y medios impresos.
-                        </p>
-                        <a href="#" class="project-view">Ver detalles</a>
-                    </div>
-                </div>
+                <!-- Tarjeta de proyecto -->
+                <!--- JavaScript para generar las tarjetas de proyecto -->
+                <!-- Repetir para otros proyectos -->
             </div>
         </div>
     </section>
 
-    <!-- Project Modal -->
+    <!-- Modal de Proyectos -->
     <div class="modal-overlay" id="project-modal">
         <div class="project-modal">
-            <button class="modal-close" id="modal-close">×</button>
+            <button class="modal-close" id="modal-close">×</button> <!-- Botón para cerrar el modal -->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title" id="modal-title">Título del Proyecto</h2>
-                    <span class="modal-category" id="modal-category">Categoría</span>
+                    <h2 class="modal-title" id="modal-title">Título del Proyecto</h2> <!-- Título del proyecto -->
+                    <span class="modal-category" id="modal-category">Categoría</span> <!-- Categoría del proyecto -->
                 </div>
                 <div class="modal-body">
+                    <!-- Galería de imágenes del proyecto -->
                     <div class="modal-gallery">
                         <img src="https://via.placeholder.com/600x400" alt="Imagen principal" class="gallery-main" id="gallery-main">
                         <div class="gallery-thumbs" id="gallery-thumbs">
+                            <!-- Miniaturas de las imágenes -->
                             <img src="https://via.placeholder.com/600x400" alt="Miniatura 1" class="gallery-thumb active" data-src="https://via.placeholder.com/600x400">
-                            <img src="https://via.placeholder.com/600x400/ff0000" alt="Miniatura 2" class="gallery-thumb" data-src="https://via.placeholder.com/600x400/ff0000">
-                            <img src="https://via.placeholder.com/600x400/00ff00" alt="Miniatura 3" class="gallery-thumb" data-src="https://via.placeholder.com/600x400/00ff00">
-                            <img src="https://via.placeholder.com/600x400/0000ff" alt="Miniatura 4" class="gallery-thumb" data-src="https://via.placeholder.com/600x400/0000ff">
+                            <!-- Repetir para otras miniaturas -->
                         </div>
+                        <!-- Botones de navegación -->
                         <button class="modal-nav modal-prev" id="modal-prev">❮</button>
                         <button class="modal-nav modal-next" id="modal-next">❯</button>
                     </div>
+                    <!-- Información detallada del proyecto -->
                     <div class="modal-info">
                         <div class="modal-description" id="modal-description">
                             <h3>Descripción</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet. Phasellus faucibus mauris ac nunc convallis, at finibus elit tincidunt. Donec auctor, nunc eget ultricies ultricies, nunc nisl ultricies nunc, quis ultricies nisl nisl quis nisl.</p>
-                            <p>Phasellus faucibus mauris ac nunc convallis, at finibus elit tincidunt. Donec auctor, nunc eget ultricies ultricies, nunc nisl ultricies nunc, quis ultricies nisl nisl quis nisl.</p>
                         </div>
                         <div class="modal-details">
                             <h3>Detalles</h3>
@@ -274,14 +174,7 @@
                                 <span class="detail-label">Cliente:</span>
                                 <span id="modal-client">Nombre del Cliente</span>
                             </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Fecha:</span>
-                                <span id="modal-date">Enero 2023</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Duración:</span>
-                                <span id="modal-duration">3 meses</span>
-                            </div>
+                            <!-- Repetir para otros detalles -->
                         </div>
                         <div class="modal-technologies">
                             <h3>Tecnologías</h3>
@@ -293,6 +186,7 @@
                                 <span class="tech-tag">Node.js</span>
                             </div>
                         </div>
+                        <!-- Botones de acción -->
                         <div class="modal-actions">
                             <a href="#" class="btn" id="modal-live">Ver Proyecto</a>
                             <a href="#" class="btn btn-outline" id="modal-code">Ver Código</a>
@@ -303,62 +197,30 @@
         </div>
     </div>
 
-    <!-- Portfolio Section -->
+    <!-- Sección de Portafolio -->
     <section class="section" id="portfolio">
         <div class="container">
-            <h2 class="section-title">Mi Portafolio</h2>
+            <h2 class="section-title">Mi Portafolio</h2> <!-- Título de la sección -->
             <div class="portfolio-grid">
+                <!-- Elementos del portafolio -->
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/600x400" alt="Proyecto 1" class="portfolio-img">
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto 1</h3>
-                        <p class="portfolio-category">Desarrollo Web</p>
+                        <h3 class="portfolio-title">Proyecto 1</h3> <!-- Título del proyecto -->
+                        <p class="portfolio-category">Desarrollo Web</p> <!-- Categoría -->
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto 2</h3>
-                        <p class="portfolio-category">Diseño UI/UX</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 3" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto 3</h3>
-                        <p class="portfolio-category">Aplicación Móvil</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 4" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto 4</h3>
-                        <p class="portfolio-category">Desarrollo Web</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 5" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto 5</h3>
-                        <p class="portfolio-category">Branding</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Proyecto 6" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto 6</h3>
-                        <p class="portfolio-category">Diseño Gráfico</p>
-                    </div>
-                </div>
+                <!-- Repetir para otros proyectos -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Sección de Contacto -->
     <section class="section contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Contáctame</h2>
+            <h2 class="section-title">Contáctame</h2> <!-- Título de la sección -->
             <div class="contact-content">
+                <!-- Información de contacto -->
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
@@ -367,56 +229,30 @@
                             <p>Ciudad, País</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>tucorreo@ejemplo.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div class="contact-details">
-                            <h4>Teléfono</h4>
-                            <p>+123 456 7890</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🌐</div>
-                        <div class="contact-details">
-                            <h4>Sitio Web</h4>
-                            <p>www.tusitio.com</p>
-                        </div>
-                    </div>
+                    <!-- Repetir para otros detalles de contacto -->
                 </div>
+                <!-- Formulario de contacto -->
                 <div class="contact-form">
                     <form id="contact-form">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Tu Nombre" required>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Tu Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Asunto" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Tu Mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
+                        <!-- Repetir para otros campos del formulario -->
+                        <button type="submit" class="btn">Enviar Mensaje</button> <!-- Botón de envío -->
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Pie de página -->
     <footer>
         <div class="container">
-            <p class="footer-text">© 2025 Tu Nombre. Todos los derechos reservados.</p>
+            <p class="footer-text">© 2025 Tu Nombre. Todos los derechos reservados.</p> <!-- Texto del footer -->
         </div>
     </footer>
-</body>
 
-<script src="index.js"></script>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="index.js"></script>
+</body>
 </html>
