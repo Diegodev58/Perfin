@@ -1,7 +1,5 @@
 // Función para cambiar el fondo a negro (modo oscuro)
-function darkMode() {
-    document.querySelector('body').style.backgroundColor = 'black';
-}
+
 
 // Seleccionar el botón de toggle para móviles y el menú de navegación
 const mobileToggle = document.getElementById('mobile-toggle');
