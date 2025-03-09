@@ -365,14 +365,14 @@ const portafolios = [
         titulo: 'Infrormacion Personal',
         descripcion: 'Este Sito Web 01 en uno de mas Usado en mis proyectos como Blog Personal',
         category: 'Html Css Js',
-        enlace: 'Plantillas_html/01-html/index.html',
+        enlace: 'Plantillas_html/01-Html/index.html',
         img: 'img/2.png',
     },
     {
         titulo: 'Bog Personal',
         descripcion: 'Este Sito Web 01 en uno de mas Usado en mis proyectos como Blog Personal',
         category: 'Html Css Js',
-        enlace: 'Plantillas_html/02-html/index.html',
+        enlace: 'Plantillas_html/02-Html/index.html',
         img: 'img/1.png',
     },
     {
