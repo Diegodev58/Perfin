@@ -394,7 +394,7 @@ const portafolios = [
         descripcion: 'Este Sito Web es un catalogo de productos',
         category: 'Html Css Js',
         enlace: 'Plantillas_html/05-Html/index.html',
-        img: 'img/4.png',
+        img: 'img/5.png',
     },
   
 ]
