@@ -403,9 +403,12 @@ const portafolios = [
 // Acceder al primer elemento
 function agregarPortafolio() {
     const portafolioP = document.getElementsByClassName('portfolio-grid')[0];
-    
+    let contador = 0;
     
     for (let portafolio of portafolios) {
+
+        let id = contador += 1;
+        let asit = `Pagina ${id}`;
         // Crear un nuevo div para cada portafolio
         const container = document.createElement('div');
         container.classList.add('container');
@@ -414,6 +417,9 @@ function agregarPortafolio() {
         portafolioCard.addEventListener('click', () => {
             window.open(portafolio.enlace, '_blank');
         })
+        const h4 = document.createElement('h3');
+        h4.classList.add('contador');
+        h4.textContent = asit;
         const portafolioInfo = document.createElement('div');
         portafolioInfo.classList.add('portfolio-overlay');
     
@@ -451,6 +457,7 @@ function agregarPortafolio() {
         portafolioInfo.appendChild(a);
         
         // Agregar el div de la experiencia al contenedor
+        portafolioCard.appendChild(h4);
         portafolioCard.appendChild(portafolioInfo);
         
         portafolioP.appendChild(portafolioCard);
