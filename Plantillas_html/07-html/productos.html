@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Elegance Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Elegance</h1>
+                <p>Bisutería Fina</p>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestra Colección</h1>
+            <p>Descubre piezas únicas diseñadas con pasión y elegancia</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="anillos">Anillos</button>
+                    <button class="filter-btn" data-filter="pulseras">Pulseras</button>
+                    <button class="filter-btn" data-filter="zarcillos">Zarcillos</button>
+                    <button class="filter-btn" data-filter="cadenas">Cadenas</button>
+                    <button class="filter-btn" data-filter="otros">Otros</button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Anillos -->
+                <div class="product-item anillos" id="anillos">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Anillo Elegance Gold">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details" 
+   data-id="1"
+   data-name="Anillo Elegance Gold" 
+   data-price="$45.00"
+   data-image="img/1.png"
+   data-description="Elegante anillo bañado en oro de 18k con diseño minimalista que realza cualquier atuendo. Perfecto para ocasiones especiales o uso diario."
+   data-features="Material: Aleación de zinc bañada en oro de 18k,Tamaños disponibles: 5-9,Hipoalergénico,Resistente al agua,Incluye estuche de regalo">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anillo Elegance Gold</h3>
+                        <p class="price">$45.00</p>
+                    </div>
+                </div>
+                <div class="product-item anillos">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Anillo Silver Twist">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details"
+   data-id="2"
+   data-name="Anillo Silver Twist" 
+   data-price="$38.00"
+   data-image="img/1.png"
+   data-description="Anillo de plata con diseño trenzado único que añade un toque de sofisticación. Su acabado brillante refleja la luz de manera hermosa."
+   data-features="Material: Plata 925,Tamaños disponibles: 5-10,Hipoalergénico,Resistente a la oxidación,Incluye estuche de regalo">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anillo Silver Twist</h3>
+                        <p class="price">$38.00</p>
+                    </div>
+                </div>
+
+                <!-- Pulseras -->
+                <div class="product-item pulseras" id="pulseras">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Pulsera Crystal Charm">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details"
+   data-id="3"
+   data-name="Pulsera Crystal Charm" 
+   data-price="$52.00"
+   data-image="img/1.png"
+   data-description="Pulsera ajustable con cristales brillantes que capturan y reflejan la luz. Cada cristal está cuidadosamente engarzado a mano."
+   data-features="Material: Aleación de zinc con baño de oro rosa,Longitud ajustable: 16-20 cm,Cristales de alta calidad,Hipoalergénico,Incluye bolsa de terciopelo">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pulsera Crystal Charm</h3>
+                        <p class="price">$52.00</p>
+                    </div>
+                </div>
+                <div class="product-item pulseras">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Pulsera Gold Link">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details"
+   data-id="4"
+   data-name="Pulsera Gold Link" 
+   data-price="$48.00"
+   data-image="img/1.png"
+   data-description="Pulsera de eslabones dorados con cierre seguro. Su diseño atemporal la convierte en un accesorio versátil para cualquier ocasión."
+   data-features="Material: Aleación de zinc bañada en oro,Longitud: 18 cm,Cierre de mosquetón,Resistente al agua,Incluye estuche de regalo">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pulsera Gold Link</h3>
+                        <p class="price">$48.00</p>
+                    </div>
+                </div>
+
+                <!-- Zarcillos -->
+                <div class="product-item zarcillos" id="zarcillos">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Zarcillos Cascade">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details"
+   data-id="5"
+   data-name="Zarcillos Cascade" 
+   data-price="$35.00"
+   data-image="img/1.png"
+   data-description="Zarcillos largos con diseño en cascada que aportan movimiento y elegancia. Ligeros y cómodos para uso prolongado."
+   data-features="Material: Aleación de zinc con baño de plata,Longitud: 6 cm,Hipoalergénico,Cierre seguro,Incluye estuche de regalo">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Zarcillos Cascade</h3>
+                        <p class="price">$35.00</p>
+                    </div>
+                </div>
+                <div class="product-item zarcillos">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Zarcillos Pearl Drop">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details"
+   data-id="6"
+   data-name="Zarcillos Pearl Drop" 
+   data-price="$42.00"
+   data-image="img/1.png"
+   data-description="Zarcillos con perlas cultivadas que añaden un toque de sofisticación clásica. El diseño minimalista realza la belleza natural de las perlas."
+   data-features="Material: Plata 925 con perlas cultivadas,Diámetro de perla: 8mm,Hipoalergénico,Resistente a la oxidación,Incluye estuche de regalo">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Zarcillos Pearl Drop</h3>
+                        <p class="price">$42.00</p>
+                    </div>
+                </div>
+
+                <!-- Cadenas -->
+                <div class="product-item cadenas" id="cadenas">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Cadena Delicate Gold">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cadena Delicate Gold</h3>
+                        <p class="price">$58.00</p>
+                    </div>
+                </div>
+                <div class="product-item cadenas">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Cadena Pendant Silver">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cadena Pendant Silver</h3>
+                        <p class="price">$62.00</p>
+                    </div>
+                </div>
+
+                <!-- Otros -->
+                <div class="product-item otros" id="otros">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Tobillera Summer Vibes">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tobillera Summer Vibes</h3>
+                        <p class="price">$32.00</p>
+                    </div>
+                </div>
+                <div class="product-item otros">
+                    <div class="product-img">
+                        <img src="img/1.png" alt="Set de Broches Floral">
+                        <div class="product-overlay">
+                            <a href="#" class="view-details">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Set de Broches Floral</h3>
+                        <p class="price">$28.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>¿Buscas algo especial?</h2>
+            <p>Contáctanos para pedidos personalizados</p>
+            <a href="contacto.html" class="btn">Contactar ahora</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elegance</h3>
+                    <p>Bisutería fina para cada ocasión</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@elegance.com</p>
+                    <p>Teléfono: +123 456 7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Elegance Bisutería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+<!-- Modal de Detalles del Producto -->
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img id="modal-product-image" src="/placeholder.svg" alt="Imagen del producto">
+            </div>
+            <div class="modal-details">
+                <h2 id="modal-product-title"></h2>
+                <p id="modal-product-price" class="price"></p>
+                <div class="product-rating">
+                    <span>★★★★★</span>
+                    <small>(4.8/5)</small>
+                </div>
+                <div class="product-description">
+                    <h3>Descripción</h3>
+                    <p id="modal-product-description"></p>
+                </div>
+                <div class="product-features">
+                    <h3>Características</h3>
+                    <ul id="modal-product-features">
+                    </ul>
+                </div>
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-btn" id="decrease-qty">-</button>
+                        <input type="number" id="product-qty" value="1" min="1" max="10">
+                        <button class="qty-btn" id="increase-qty">+</button>
+                    </div>
+                    <button class="btn add-to-cart-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
