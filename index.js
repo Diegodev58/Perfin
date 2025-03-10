@@ -396,6 +396,13 @@ const portafolios = [
         enlace: 'Plantillas_html/05-html/index.html',
         img: 'img/5.png',
     },
+    {
+        titulo: 'Tienda',
+        descripcion: 'Este Sito Web es una tienda de productos',
+        category: 'Html Css Js',
+        enlace: 'Plantillas_html/06-html/index.html',
+        img: 'img/6.png',
+    },
   
 ]
 

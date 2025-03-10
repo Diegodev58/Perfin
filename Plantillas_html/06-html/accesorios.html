@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/productos.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechStore</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="telefonos.html">Teléfonos</a></li>
+                    <li><a href="relojes.html">Relojes</a></li>
+                    <li><a href="accesorios.html" class="active">Accesorios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Accesorios</h1>
+            <p>Complementa tus dispositivos con nuestra selección de accesorios de calidad</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <h3>Filtrar por:</h3>
+                    <div class="filter-options">
+                        <select id="categoryFilter">
+                            <option value="">Todas las categorías</option>
+                            <option value="auriculares">Auriculares</option>
+                            <option value="cargadores">Cargadores</option>
+                            <option value="fundas">Fundas y protectores</option>
+                            <option value="correas">Correas para relojes</option>
+                            <option value="otros">Otros accesorios</option>
+                        </select>
+                        <select id="priceFilter">
+                            <option value="">Todos los precios</option>
+                            <option value="0-50">Menos de €50</option>
+                            <option value="50-100">€50 - €100</option>
+                            <option value="100-200">€100 - €200</option>
+                            <option value="200+">Más de €200</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sort-group">
+                    <label for="sortOrder">Ordenar por:</label>
+                    <select id="sortOrder">
+                        <option value="featured">Destacados</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Auriculares Inalámbricos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Auriculares Pro Max</h3>
+                        <p class="product-category">Auriculares</p>
+                        <p class="product-description">Cancelación activa de ruido, hasta 24 horas de batería, resistentes al agua.</p>
+                        <p class="product-price">€249</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Cargador Rápido">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cargador Rápido 65W</h3>
+                        <p class="product-category">Cargadores</p>
+                        <p class="product-description">Carga rápida para smartphones y tablets, múltiples puertos USB-C.</p>
+                        <p class="product-price">€59</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Funda Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Funda Premium Silicona</h3>
+                        <p class="product-category">Fundas y protectores</p>
+                        <p class="product-description">Protección contra caídas, acabado suave al tacto, compatible con carga inalámbrica.</p>
+                        <p class="product-price">€29</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Correa de Reloj">
+                    </div>
+                    <div class="product-info">
+                        <h3>Correa de Cuero Genuino</h3>
+                        <p class="product-category">Correas para relojes</p>
+                        <p class="product-description">Cuero de alta calidad, hebilla de acero inoxidable, disponible en varios colores.</p>
+                        <p class="product-price">€49</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Protector de Pantalla">
+                    </div>
+                    <div class="product-info">
+                        <h3>Protector de Pantalla Vidrio Templado</h3>
+                        <p class="product-category">Fundas y protectores</p>
+                        <p class="product-description">Dureza 9H, instalación sin burbujas, kit de instalación incluido.</p>
+                        <p class="product-price">€19</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Soporte para Smartphone">
+                    </div>
+                    <div class="product-info">
+                        <h3>Soporte Ajustable para Smartphone</h3>
+                        <p class="product-category">Otros accesorios</p>
+                        <p class="product-description">Ángulo ajustable, compatible con todos los modelos, plegable y portátil.</p>
+                        <p class="product-price">€24</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn" disabled>Anterior</button>
+                <div class="pagination-numbers">
+                    <button class="pagination-number active">1</button>
+                    <button class="pagination-number">2</button>
+                    <button class="pagination-number">3</button>
+                </div>
+                <button class="pagination-btn">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a nuestro boletín</h2>
+                <p>Recibe las últimas novedades y ofertas exclusivas directamente en tu correo.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de confianza para tecnología móvil y accesorios.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="telefonos.html">Teléfonos</a></li>
+                        <li><a href="relojes.html">Relojes</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <address>
+                        <p>Calle Tecnología, 123</p>
+                        <p>28001 Madrid, España</p>
+                        <p>Teléfono: +34 91 123 45 67</p>
+                        <p>Email: info@techstore.es</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

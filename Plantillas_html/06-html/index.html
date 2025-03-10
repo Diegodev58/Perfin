@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Tu tienda de tecnología</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechStore</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="telefonos.html">Teléfonos</a></li>
+                    <li><a href="relojes.html">Relojes</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Tecnología de vanguardia a tu alcance</h2>
+                <p>Descubre nuestra selección de smartphones, relojes inteligentes y accesorios de las mejores marcas.</p>
+                <div class="hero-buttons">
+                    <a href="telefonos.html" class="btn btn-primary">Ver teléfonos</a>
+                    <a href="relojes.html" class="btn btn-secondary">Ver relojes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Productos destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="css/img/1.png" alt="Smartphone Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone Premium</h3>
+                        <p class="product-description">El último modelo con cámara de alta resolución y batería de larga duración.</p>
+                        <p class="product-price">€899</p>
+                        <button class="btn btn-primary">Ver detalles</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="css/img/1.png" alt="Reloj Inteligente">
+                    </div>
+                    <div class="product-info">
+                        <h3>Reloj Inteligente</h3>
+                        <p class="product-description">Monitorea tu actividad física y recibe notificaciones al instante.</p>
+                        <p class="product-price">€299</p>
+                        <button class="btn btn-primary">Ver detalles</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="css/img/1.png" alt="Auriculares Inalámbricos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Auriculares Inalámbricos</h3>
+                        <p class="product-description">Sonido de alta calidad con cancelación de ruido activa.</p>
+                        <p class="product-price">€199</p>
+                        <button class="btn btn-primary">Ver detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras categorías</h2>
+            <div class="categories-grid">
+                <a href="telefonos.html" class="category-card">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Teléfonos">
+                    </div>
+                    <h3>Teléfonos</h3>
+                </a>
+                <a href="relojes.html" class="category-card">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Relojes">
+                    </div>
+                    <h3>Relojes</h3>
+                </a>
+                <a href="accesorios.html" class="category-card">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Accesorios">
+                    </div>
+                    <h3>Accesorios</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-slider" id="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Excelente servicio y productos de calidad. Compré mi nuevo smartphone y estoy encantado con la compra."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>Carlos Rodríguez</strong></p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Mi reloj inteligente funciona perfectamente. La atención al cliente es inmejorable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>María González</strong></p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Precios competitivos y envío rápido. Volveré a comprar sin duda."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>Juan Pérez</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="prevTestimonial" class="testimonial-control">&#10094;</button>
+                <button id="nextTestimonial" class="testimonial-control">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a nuestro boletín</h2>
+                <p>Recibe las últimas novedades y ofertas exclusivas directamente en tu correo.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de confianza para tecnología móvil y accesorios.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="telefonos.html">Teléfonos</a></li>
+                        <li><a href="relojes.html">Relojes</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <address>
+                        <p>Calle Tecnología, 123</p>
+                        <p>28001 Madrid, España</p>
+                        <p>Teléfono: +34 91 123 45 67</p>
+                        <p>Email: info@techstore.es</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

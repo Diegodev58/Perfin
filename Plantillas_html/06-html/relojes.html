@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relojes Inteligentes - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/productos.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechStore</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="telefonos.html">Teléfonos</a></li>
+                    <li><a href="relojes.html" class="active">Relojes</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Relojes Inteligentes</h1>
+            <p>Descubre nuestra colección de smartwatches con las últimas tecnologías</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <h3>Filtrar por:</h3>
+                    <div class="filter-options">
+                        <select id="brandFilter">
+                            <option value="">Todas las marcas</option>
+                            <option value="apple">Apple</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="garmin">Garmin</option>
+                            <option value="fitbit">Fitbit</option>
+                            <option value="xiaomi">Xiaomi</option>
+                        </select>
+                        <select id="priceFilter">
+                            <option value="">Todos los precios</option>
+                            <option value="0-100">Menos de €100</option>
+                            <option value="100-300">€100 - €300</option>
+                            <option value="300-500">€300 - €500</option>
+                            <option value="500+">Más de €500</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sort-group">
+                    <label for="sortOrder">Ordenar por:</label>
+                    <select id="sortOrder">
+                        <option value="featured">Destacados</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Smartwatch Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartwatch Series 8</h3>
+                        <p class="product-brand">Apple</p>
+                        <p class="product-description">Pantalla Retina siempre activa, sensor de oxígeno en sangre, ECG.</p>
+                        <p class="product-price">€429</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Smartwatch Deportivo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartwatch Active 4</h3>
+                        <p class="product-brand">Samsung</p>
+                        <p class="product-description">Pantalla Super AMOLED, GPS integrado, monitorización avanzada de salud.</p>
+                        <p class="product-price">€299</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Smartwatch Deportivo Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>Forerunner 955</h3>
+                        <p class="product-brand">Garmin</p>
+                        <p class="product-description">GPS multibanda, mapas a color, métricas avanzadas de entrenamiento.</p>
+                        <p class="product-price">€549</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Smartwatch Fitness">
+                    </div>
+                    <div class="product-info">
+                        <h3>Versa 4</h3>
+                        <p class="product-brand">Fitbit</p>
+                        <p class="product-description">Más de 40 modos de ejercicio, GPS integrado, batería de 6+ días.</p>
+                        <p class="product-price">€229</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Smartwatch Económico">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mi Watch</h3>
+                        <p class="product-brand">Xiaomi</p>
+                        <p class="product-description">Pantalla AMOLED, 117 modos deportivos, batería de 16 días.</p>
+                        <p class="product-price">€99</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Smartwatch Ultra">
+                    </div>
+                    <div class="product-info">
+                        <h3>Watch Ultra</h3>
+                        <p class="product-brand">Apple</p>
+                        <p class="product-description">Diseño resistente, GPS de precisión, batería de larga duración.</p>
+                        <p class="product-price">€799</p>
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn" disabled>Anterior</button>
+                <div class="pagination-numbers">
+                    <button class="pagination-number active">1</button>
+                    <button class="pagination-number">2</button>
+                </div>
+                <button class="pagination-btn">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a nuestro boletín</h2>
+                <p>Recibe las últimas novedades y ofertas exclusivas directamente en tu correo.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de confianza para tecnología móvil y accesorios.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="telefonos.html">Teléfonos</a></li>
+                        <li><a href="relojes.html">Relojes</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <address>
+                        <p>Calle Tecnología, 123</p>
+                        <p>28001 Madrid, España</p>
+                        <p>Teléfono: +34 91 123 45 67</p>
+                        <p>Email: info@techstore.es</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

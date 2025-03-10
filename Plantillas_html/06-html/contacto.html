@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/contacto.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechStore</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="telefonos.html">Teléfonos</a></li>
+                    <li><a href="relojes.html">Relojes</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte. Ponte en contacto con nosotros.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="info-item">
+                        <h3>Dirección</h3>
+                        <p>Calle Tecnología, 123</p>
+                        <p>28001 Madrid, España</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Teléfono</h3>
+                        <p>+34 91 123 45 67</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>info@techstore.es</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Horario</h3>
+                        <p>Lunes a Viernes: 10:00 - 20:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                        <p>Domingos: Cerrado</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="map-container">
+                <!-- Aquí iría un mapa real, pero usamos un placeholder para este ejemplo -->
+                <img src="/placeholder.svg?height=400&width=1200" alt="Mapa de ubicación" class="map-placeholder">
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="faq">
+                        <h3>¿Cuál es el tiempo de entrega de los productos?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo de entrega estándar es de 2-3 días laborables para envíos nacionales. Para envíos internacionales, el tiempo puede variar entre 5-10 días laborables dependiendo del destino.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="faq">
+                        <h3>¿Ofrecen garantía en sus productos?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, todos nuestros productos cuentan con garantía oficial del fabricante. Los teléfonos y relojes tienen una garantía de 2 años, mientras que los accesorios tienen una garantía de 1 año.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="faq">
+                        <h3>¿Puedo devolver un producto si no estoy satisfecho?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Por supuesto. Ofrecemos un período de devolución de 14 días desde la recepción del producto. El producto debe estar en su embalaje original y en perfectas condiciones.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-toggle="faq">
+                        <h3>¿Tienen tiendas físicas además de la tienda online?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, contamos con tiendas físicas en Madrid, Barcelona y Valencia. Puedes visitar la sección de "Nuestras Tiendas" para ver las direcciones y horarios específicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a nuestro boletín</h2>
+                <p>Recibe las últimas novedades y ofertas exclusivas directamente en tu correo.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de confianza para tecnología móvil y accesorios.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="telefonos.html">Teléfonos</a></li>
+                        <li><a href="relojes.html">Relojes</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <address>
+                        <p>Calle Tecnología, 123</p>
+                        <p>28001 Madrid, España</p>
+                        <p>Teléfono: +34 91 123 45 67</p>
+                        <p>Email: info@techstore.es</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
